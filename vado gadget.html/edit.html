@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vado webpage</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: antiquewhite;
+        height: 100vh;
+    }
+    main{
+        background-color: rgb(232, 241, 241);
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: bisque;
+        padding: 20px 50px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    .first-section{
+        display: flex;
+       margin: 80px 50px;
+       align-items: center;
+       gap: 10%;
+       
+    }
+    aside h1{
+        font-size: 50px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    aside p{
+        font-size: 20px;
+       line-height: 1.5;
+       word-spacing: 1px;
+       font-weight: 300px;
+        font-size: 20px;
+        color: rgb(117, 120, 122);
+        margin-bottom: 20px;
+    }
+    aside img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .shop-btn{
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+    }
+    .learn-btn{
+        padding: 10px 30px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: none;
+
+    }
+    aside{
+        width: 50%;
+    }
+    .select-items img{
+        width: 200px;
+        border-radius: 50%;
+        height: 200px;
+        object-fit: cover;
+        padding: 5px;
+        border: 2px solid black;
+    }
+    .select-items{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    .grid-section h3{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .grid-section .subtitle{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .image-section{
+        width: 300px;
+        border-bottom: 1px solid black;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .grid-container{
+        display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         text-align: center;    
+    }
+    .grid-items{ 
+        background-color: white;
+        border: 1px solid black;
+        /* padding: 10px; */
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .grid-container button{
+        padding: 10px 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        width: 90%;
+      
+    }
+    .home-img{
+        position: relative;
+    }
+    .on-image{
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        background-color: black;
+        color: white;
+        padding: 10px ;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>vado's gadgets</h1>
+             </div>
+             <div>
+                <ul>
+                    <li>home</li>
+                    <li>products</li>
+                    <li>categories</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+        <div class="first-section">
+            <aside>
+                <h1>Discover Amazing Products</h1>
+                <p>Shop the latest trends and find everything you need at unbeatable prices. Quality products, fast shipping, and excellent customer service.</p>
+                <button class="shop-btn">shop now</button>
+                <button class="learn-btn">learn more</button>
+            </aside>
+            <aside class="home-img">
+                <img  src="Gadgets.jpeg" alt="phones">
+                <div class="on-image" >
+                    <h4>Free Shipping <br> On orders over $50</h4>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Discover your gadgets</h1>
+            <div class="select-items">
+            <div>
+                <img src="phone.jpeg" alt="">
+                <h3>Quality smartphones</h3>
+            </div>
+            <div>
+                <img src="laptop.jpeg" alt="">
+                <h3>affordable laptops</h3>
+            </div>
+            <div>
+                <img src="console.jpeg" alt="">
+                <h3>latest gaming console</h3>
+            </div>
+            <div>
+                <img src="Gadgets.jpeg" alt="">
+                <h3>all is available</h3>
+            </div>
+            
+        </section>
+    <section class="grid-section">
+        <h3>Featured Products</h3>
+        <p class="subtitle">Discover our handpicked selection of premium products at amazing prices</p>
+    </section>
+    <div class="grid-container">
+        <div class="grid-items">
+            <img class="image-section" src="phone 1.jpg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;&#11088;
+            <p>$79.99<span style="text-decoration: line-through; color: grey">$120</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="phone2.jpg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;
+            <p>$59.99   <span style="text-decoration: line-through; color: grey">$80</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="phone3.jpg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;
+            <p>$85.99<span style="text-decoration: line-through; color: grey">$120</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="Gadgets.jpeg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;&#11088;
+            <p>$80.99<span style="text-decoration: line-through; color: grey">$90</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="console.jpeg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;&#11088;
+            <p>$60.99<span style="text-decoration: line-through; color: grey">$125</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="laptop.jpeg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;
+            <p>$79.88<span style="text-decoration: line-through; color: grey">$150</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="console.jpeg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;
+            <p>$69.55<span style="text-decoration: line-through; color: grey">$130</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+        <div class="grid-items">
+            <img class="image-section" src="phone.jpeg".jpeg" alt="">
+            <p>Wireless Bluetooth Headphones</p>
+            &#11088;&#11088;&#11088;&#11088;
+            <p>$58.98<span style="text-decoration: line-through; color: grey">$100</span></p>
+            <button> <i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+    </div>
+    
+    </main>
+    <footer></footer>
+</body>
+</html>
